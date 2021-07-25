@@ -15,7 +15,7 @@
 
 <body>
     <!--Верх сторінки-->
-    <!--
+    
     <header class="page--header">
         <div class="container page--header__container">
                 <nav class="main--nav">
@@ -39,7 +39,43 @@
                                     <use href="./images/symbol-defs.svg#icon-smartphoneright"></use>
                             </svg>+38 096 111 11 11</a></li>
                         </ul>
+                <button class="menu--open__btn" data-menu-open type="button">
+                    <svg class="icon--open__btn" width="24" height="16" viewBox="0 0 48 32">
+                    <use href="./images/menu.svg#icon-menu_24px"> </use> </svg>
+                </button>
             </div>
+    <div class="mobile--nav is-hidden" id="menu" data-menu>
+        <div class="mobile--container" id="content">
+                <button class="menu--close__btn" data-menu-close  type="button">
+                <svg class="icon--close__btn" width="18" height="18" viewBox="0 0 32 32">
+                        <use href="./images/menu.svg#icon-close_24px"> </use> </svg>
+            </button>
+            <div class="mobile--menu__container">        
+                <ul class="list mobile--menu__list">
+                    <li class="mobile--menu__item"><a class="link mobile--menu__link mobile--menu__link--current">Студия</a></li>
+                    <li class="mobile--menu__item"><a class="link mobile--menu__link">Портфолио</a></li>
+                    <li class="mobile--menu__item"><a class="link mobile--menu__link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="mobile--contacts__container"> 
+                <ul class="list mobile--contacts__list">
+                    <li class="mobile--contacts__item"><a class="link mobile--contacts__link--tel">+38 096 111 11 11</a></li>
+                    <li class="mobile--contacts__item"><a class="link mobile--contacts__link--mail">info@devstudio.com</a></li>
+                </ul>
+            </div>  
+                <ul class="list mobile--media__list">
+                    <li class="mobile--media__item"><a class="link mobile--media__link mobile--media__link--after">Instagram
+                        
+                    </a></li>
+                    <li class="mobile--media__item"><a class="link mobile--media__link mobile--media__link--after">Twitter
+                        </a></li>
+                    <li class="mobile--media__item"><a class="link mobile--media__link mobile--media__link--after">Facebook
+                        </a></li>
+                    <li class="mobile--media__item"><a class="link mobile--media__link">LinkedIn</a></li>
+                </ul>
+        </div>
+    </div>
+            
         </header>
         <!--Основна частина сторінки-->
     <main>
@@ -84,19 +120,19 @@
                     <h2 class="work__title work__subtitle">Чем мы занимаемся</h2>
                     <ul class="list discription__list">
                         <li class="discription__item discription__item--adds">
-                            <img src="./images/whatwedo1.jpg" alt=" Робочий стіл працівника" width="370" height="294" />
+                            <img src="./images/whatwedo1.jpg" srcset="./images/whatwedo1@2x.jpg 2x" alt=" Робочий стіл працівника" width="370" height="294" />
                                     <div class="discription__thumb--adds">
                                         <h3 class="discription__title">Десктопные приложения</h3>
                                     </div>
                         </li>
                         <li class="discription__item discription__item--adds">
-                            <img src="./images/whatwedo2.jpg" alt=" Синхронізація ноутбука з телефоном" width="370" height="294" />
+                            <img src="./images/whatwedo2.jpg" srcset="./images/whatwedo2@2x.jpg 2x" alt=" Синхронізація ноутбука з телефоном" width="370" height="294" />
                                     <div class="discription__thumb--adds">
                                         <h3 class="discription__title">Мобильные приложения</h3>
                                     </div>
                         </li>
                         <li class="discription__item discription__item--adds">
-                            <img src="./images/whatwedo3.jpg" alt=" Кольорограма на планшеті" width="370" height="294" />
+                            <img src="./images/whatwedo3.jpg" srcset="./images/whatwedo3@2x.jpg 2x" alt=" Кольорограма на планшеті" width="370" height="294" />
                                     <div class="discription__thumb--adds">
                                         <h3 class="discription__title">Дизайнерские решения</h3>
                                     </div>
@@ -110,7 +146,7 @@
                     <h2 class="title">Наша команда</h2>
                     <ul class="list team__list">
                         <li class="team__item">
-                            <img class="team__img" src="./images/ihor.jpg" alt="Игорь Демьяненко" width="100%"  />
+                            <img class="team__img" src="./images/ihor.jpg" srcset="./images/ihor@2x.jpg 2x" alt="Игорь Демьяненко" width="100%"  />
                                 <div class="team__box">
                                     <h3 class="team__name "> Игорь Демьяненко</h3>
                                     <p class="team__position">Product Designer</p>
@@ -145,7 +181,7 @@
                                 </div>
                         </li>
                         <li class="team__item">
-                            <img class="team__img" src="./images/olha.jpg" alt="Ольга Репина" width="100%"  />
+                            <img class="team__img" src="./images/olha.jpg" srcset="./images/olha@2x.jpg 2x" alt="Ольга Репина" width="100%"  />
                                 <div class="team__box">
                                     <h3 class="team__name"> Ольга Репина </h3>
                                     <p class="team__position">Frontend Developer</p>
@@ -180,7 +216,7 @@
 
                         </li>
                         <li class="team__item">
-                            <img class="team__img" src="./images/nikolaj.jpg" alt="Николай Тарасов" width="100%" />
+                            <img class="team__img" src="./images/nikolaj.jpg" srcset="./images/nikolaj@2x.jpg 2x" alt="Николай Тарасов" width="100%" />
                                 <div class="team__box">
                                     <h3 class="team__name"> Николай Тарасов </h3>
                                     <p class="team__position">Marketing</p>
@@ -214,7 +250,7 @@
                                 </div>
                         </li>
                         <li class="team__item">
-                            <img class="team__img" src="./images/mihael.jpg" alt="Михаил Ермаков" width="100%"/>
+                            <img class="team__img" src="./images/mihael.jpg" srcset="./images/mihael@2x.jpg 2x" alt="Михаил Ермаков" width="100%"/>
                                 <div class="team__box">
                                     <h3 class="team__name"> Михаил Ермаков </h3>
                                         <p class="team__position">UI Designer</p>
@@ -415,6 +451,7 @@
 -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu--btn.js"></script>
 </body>
 
 </html>
