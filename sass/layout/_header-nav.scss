@@ -2,6 +2,9 @@
 .main--nav{
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767px){
+    justify-content: space-between;
+  }
 }
 .main--nav__list{
   display: none;
@@ -147,10 +150,12 @@
   background-color: $primery-br-color;
   width: 100vw;
   height: 100vh;
+  z-index: 2;
   
 }
 
 .mobile--container{
+  width: 480px;
   position: relative;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -161,27 +166,86 @@
   height: 100%;
 
 }
-.menu--open__btn{
-  position: absolute;
-  top: 21px;
-  right: 25px;
-}
 
+.menu--open__btn{
+  display: inline-flex;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: $primery-br-color;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition: transform $transition;
+  opacity: 1;
+  visibility: visible;
+  @media screen and (min-width: 768px){
+  max-width: 768px;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+} 
+}
+.menu--close__btn{
+  display: inline-flex;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: $primery-br-color;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 10.6px;
+  transition: transform $transition;
+}
+.icon--open__btn{
+  display: flex;
+  width: 100%;
+  height: 16px;
+  fill: #000;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  transition: transform $transition;
+  
+}
+.icon--close__btn{
+  display: flex;
+  width: 100%;
+  height: 19px;
+  fill: #000;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  transition: transform $transition;
+  
+}
 .menu--open__btn:hover,
 .menu--open__btn:focus{
   color: $accent-color;
-}
-
-.menu--close__btn{
-  position: absolute;
-  top: 21px;
-  right: 25px;
+  .icon--open__btn{
+    fill: currentColor;
+  }
 }
 .menu--close__btn:hover,
 .menu--close__btn:focus{
   color: $accent-color;
+  .icon--close__btn{
+    fill: currentColor;
+  }
 }
 
+
+.mobile--menu__list{
+  margin-bottom: auto;
+  
+}
 .mobile--menu__item{
   margin-bottom: 32px;
 }
@@ -200,7 +264,11 @@ letter-spacing: 0.02em;
 .mobile--menu__link--current{
   color: $accent-color;
 }
-
+.mobile--contacts__list{
+  display: block;
+  bottom: 0;
+  right: 0;
+}
 .mobile--contacts__link--tel{
   display: inline-block;
   font-weight: 500;
@@ -217,7 +285,7 @@ font-size: 24px;
 line-height: 1.1;
 letter-spacing: 0.02em;
 color: #757575;
-margin-bottom: 64px;
+//margin-bottom: 64px;
 }
 .mobile--media__list{
   display: inline-flex;

@@ -1,8 +1,26 @@
 .filters__list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+  max-width: 768px;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   margin-top: 0px;
   margin-bottom: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 34px;
+    }
+  
 }
 .filters__btn {
   @include font(16px, 500, 1.6);
@@ -24,7 +42,12 @@
     }
 }
 .filters__item:not(:last-child) {
+  margin-bottom: 15px;
   margin-right: 8px;
+  @media screen and (min-width: 768px) {
+  margin-right: 8px;
+  margin-bottom: 0px;
+  }
 }
   
   
