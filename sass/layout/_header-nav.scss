@@ -144,18 +144,19 @@
 
 
 .mobile--nav{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: $primery-br-color;
   width: 100vw;
   height: 100vh;
-  z-index: 2;
+  z-index: 99;
   
 }
 
 .mobile--container{
-  width: 480px;
+  width: 100vw;
+  min-width: 320px;
   position: relative;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -258,6 +259,7 @@ font-size: 40px;
 line-height: 1.1;
 text-align: center;
 letter-spacing: 0.02em;
+color: black;
 }
 .mobile--menu__link:hover,
 .mobile--menu__link:focus,
