@@ -1,11 +1,27 @@
 .footer {
-  width: 100%;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.7;
+  //width: 100%;
+  //text-decoration: none;
+  //font-size: 14px;
+  //line-height: 1.7;
   background-color: $same-section-color;
+  //background-position: center;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.logo--footer__container{
+  max-width: 154px;
+  height: auto;
+  margin-bottom: 20px;
+  @media screen and (min-width: 480px) and (max-width: 767px){
+   
+  }
+  @media screen and (min-width: 767px) and (max-width: 1199px){
+   
+  }
+  @media screen and (min-width: 1200px){
+    max-width: 145px;
+    
+    }
 }
 .logo {
   @extend %logo;
@@ -38,7 +54,7 @@
   line-height: 1.1;
   width: 231px;
   margin-right: 0px;
-  width: 480px;
+ // width: 480px;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -52,10 +68,14 @@
   //margin-right: auto;
   margin-bottom: 60px;
   margin-left: 0px;
-  width: 480px;
+  //width: 232px;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: 768px){
+    
+    //width: 480px;
+  }
   }
 .contacts__link--footer{
   color: $contacts__link--footer;
@@ -67,28 +87,44 @@
   transition-property: color;
 }
 .contacts__link--footer--gap {
+  
   margin-bottom: 8px;
   @media screen and (min-width: 1200px){
   margin-bottom: 9px;  
   }
   
 }
-  
 .container--join {
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) and (max-width: 767px){
+    width: 480px;
+   
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    width: 768px;
+  }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
     display: flex;
     align-items: baseline;
+    margin: 0;
   }
 }
   
 .container--colone {
-  width: 480px;
+  //width: 480px;
+  width: 320px;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 768px){
+  justify-content: center;
+  @media screen and (min-width: 480px) and (max-width: 767px){
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px){
     max-width: 768px;
     display: flex;
     flex-wrap: wrap;
@@ -102,11 +138,16 @@
 }
 
 .container--coltwo {
-  width: 480px;
+  //width: 480px;
+  width: 320px;
+  justify-content: center;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 480px) and (max-width: 767px){
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px){
     max-width: 768px;
     display: flex;
     flex-wrap: wrap;
@@ -117,14 +158,15 @@
     }
 }
 .container--space{
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   }
   @media screen and (min-width: 1200px){
     max-width: 1200px;
     display: flex;
     align-items: baseline;
+    justify-content: center;
   }
 }  
 .container--coltwo > .container--coltwo__gap {
@@ -173,11 +215,15 @@
   fill: #fff;
   }
 .container--colthree {
-  width: 480px;
+  width: 320px;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 768px){
+  justify-content: center;
+  @media screen and (min-width: 480px) and (max-width: 767px){
+  width: 480px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px){
     max-width: 768px;
     display: flex;
     flex-direction: column;
@@ -192,10 +238,11 @@
 
 } 
 .footer--form{
-  width: 100%;
+  //width: 100%;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  
 }   
 .footer--form__gap {
   margin-top: 0;
@@ -206,9 +253,10 @@
   flex-direction: column;
   align-items: center;
   @media screen and (min-width: 1200px){
-    width: 100%;
+   // width: 100%;
     flex-direction: row; 
     align-items: baseline;
+    margin-left: 93px;
   }
 }
 .footer--form > .footer--form__text {
@@ -230,6 +278,7 @@
 .footer--form__subscribe {
   display: inline-block;
   width: 358px;
+  //width: 100%;
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 4px;

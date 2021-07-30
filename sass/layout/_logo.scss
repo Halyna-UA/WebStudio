@@ -1,3 +1,12 @@
+.logo__container{
+  @media screen and (max-width: 1199px){
+  max-width: 134px;
+  height: auto;
+  }
+  @media screen and (min-width: 1200px){
+  max-width: 145px;
+  }
+}
 .logo {
   @extend %logo;
   color: $accent-color;
