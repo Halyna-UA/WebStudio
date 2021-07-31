@@ -15,6 +15,7 @@
     }
 }
 .project__item {
+  display: flex;
   margin-bottom: 30px;
   margin-top: 0;
   margin-left: 0;
@@ -36,7 +37,8 @@
   margin-bottom: 30px;}
 
 .project__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: transform $transition;
   transition-property: box-shadow;
     &:hover,
@@ -46,6 +48,7 @@
     }
 }
 .pack {
+  flex-grow: 1;
   border-right: $border;
   border-bottom: $border;
   border-left: $border;

@@ -180,6 +180,7 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  padding-right: 83px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -263,7 +264,7 @@
 
 
 .mobile--menu__list{
-  margin-bottom: auto;
+  margin-bottom: 302px;
   
 }
 .mobile--menu__item{
@@ -309,7 +310,7 @@ color: #757575;
 //margin-bottom: 64px;
 }
 .mobile--media__list{
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
