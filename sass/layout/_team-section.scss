@@ -63,13 +63,13 @@
   margin-right: 30px;
 }
 }
+
 .team__img{
   width: 450px;
   height: 460px;
-  
-  
+    
   @media screen and (min-width: 768px){
-    max-width: 354px;
+    width: 354px;
     height: 374px;
   }
   @media screen and (min-width: 1200px) {

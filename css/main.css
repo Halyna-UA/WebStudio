@@ -438,7 +438,7 @@ img {
   fill: currentColor;
 }
 
-.mobile--menu__list {
+.mobile--menu__container .mobile--menu__list {
   margin-bottom: 302px;
 }
 
@@ -488,6 +488,7 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-bottom: 32px;
 }
 
 .mobile--media__list {
@@ -954,7 +955,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .team__img {
-    max-width: 354px;
+    width: 354px;
     height: 374px;
   }
 }
