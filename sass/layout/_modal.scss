@@ -179,9 +179,14 @@
 }
 .modal--form__check--accept {
   display: inline-block;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.16;
   color: #757575;
+  
+  @media screen and (min-width: 1200px){
+    font-size: 14px; 
+    line-height: 1.7;
+  }
 }
 .modal--form__btn {
   align-self: center;
@@ -200,4 +205,5 @@
 .modal--form__check--info {
   color: $accent-color;
   text-decoration: underline;
+  
 }

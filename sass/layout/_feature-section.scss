@@ -96,10 +96,8 @@
 }
   
 .feature__text {
-  font-size: 14px;
-  line-height: 1.7;
+  @include font(14px, 400, 1.7);
   color: $primery-text-color;
-  
   margin-top: 0;
   margin-bottom: 0;
 }

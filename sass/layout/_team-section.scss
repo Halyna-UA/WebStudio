@@ -1,14 +1,13 @@
 .team {
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
-    
+  margin: 0 auto;
   @media screen and (min-width: 768px) {
-    max-width: 768px;
-    margin: 0 auto;
+  
+    
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
     }
@@ -16,17 +15,20 @@
   }
 
 .title {
-  @include font(36px, 700, 1.1);
+  @include font(28px, 700, 1.1);
   color: $title-text-color;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0px;
-  @media screen and (min-width: 768px){
-    font-size: 28px;
+
+@media screen and (min-width: 1200px){
+  width: 1200px;
+  @include font(36px, 700, 1.1);
+  margin-bottom: 50px;
   }
 }
 .team__list {
-  margin-bottom: -30px;
+ // margin-bottom: -30px;
   @media screen and (min-width: 768px){
     display: flex;
     flex-wrap: wrap;
@@ -38,6 +40,7 @@
     
   }
 }
+
 .team__item {
   width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -45,12 +48,12 @@
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;
   @media screen and (min-width: 768px){
-    max-width: 768px;
+    width: 768px;
     flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    width: 1200px;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 30px;
@@ -80,7 +83,6 @@
 }
 
 .team__box {
-  /*width: 270px;*/ 
   
   border-right: $border;
   border-bottom: $border;
@@ -133,7 +135,7 @@
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  fill: var(--border-clients);
+  fill: $border-clients;
   transition: transform var(--transition);
   transition-property: fill, background;
 }

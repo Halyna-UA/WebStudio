@@ -7,7 +7,7 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px){
     justify-content: center;
-   }
+  }
 }
 .main--nav__list{
   display: none;
@@ -40,8 +40,8 @@
   align-items: center;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.1;
-  color: $primery-text-color;
+  line-height: 1.17;
+  color: $title-text-color;
   font-family: "Roboto", sans-serif;
   transition: transform $transition;
   transition-property: color;
@@ -261,12 +261,12 @@
     fill: currentColor;
   }
 }
-
+/*
 .mobile--menu__container
 .mobile--menu__list{
   margin-bottom: 302px;
   
-}
+}*/
 .mobile--menu__item{
   margin-bottom: 32px;
 }
@@ -310,10 +310,12 @@ color: #757575;
 margin-bottom: 32px;
 }
 .mobile--media__list{
-  display: flex;
+  display:inline-flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 20px;
+
   
 }
 .mobile--media__link{

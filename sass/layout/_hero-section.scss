@@ -22,7 +22,7 @@
         url("../images/mobile/heroimgmob@2x.jpg");
     }
   @media screen and (min-width: 768px){
-    max-width: 768px;
+    width: 768px;
     height: 400px;
     background-image: linear-gradient(
       to right,
@@ -44,8 +44,9 @@
     }
   }
   @media screen and (min-width: 1200px){
-  max-width: 100%;
+  width: 1200px;
   max-height: 600px;
+  background-size: cover;
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(
@@ -82,7 +83,7 @@
 }
   
 .hero__title {
-  max-width: 969px;
+  //max-width: 969px;
   @include font(26px, 900, 1.6);
   color: #fff;
   font-style: normal;
