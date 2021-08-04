@@ -1,31 +1,17 @@
 .page--header__container {
-  //width: 100%;
-  //display: flex;
-  //justify-content: space-between;
-  //align-items: center;
-  //margin: 0 auto;
-  border-bottom: $border;
-  
   padding-top: 16px;
   padding-bottom: 15px;
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    //width: 480px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    //margin: 0 auto;
-    //padding-top: 16px;
-    //padding-bottom: 16px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }  
   @media screen and (min-width: 768px) and (max-width: 1199px){
-  
   display: flex;
   justify-content: center;
   //justify-content: space-between;
   align-items: center;
-  //margin: 0 auto;
-  //padding-top: 26px;
-  //padding-bottom: 26px;
+  
   }
   @media screen and (min-width: 1200px){
   max-width: 1200px;

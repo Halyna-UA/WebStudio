@@ -1,27 +1,19 @@
 .footer {
-  //width: 100%;
-  //text-decoration: none;
-  //font-size: 14px;
-  //line-height: 1.7;
   background-color: $same-section-color;
-  //background-position: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.logo--footer__container{
+.logo--footer__container {
   max-width: 154px;
   height: auto;
   margin-bottom: 20px;
-  @media screen and (min-width: 480px) and (max-width: 767px){
-   
+  @media screen and (min-width: 480px) and (max-width: 767px) {
   }
-  @media screen and (min-width: 767px) and (max-width: 1199px){
-   
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     max-width: 145px;
-    
-    }
+  }
 }
 .logo {
   @extend %logo;
@@ -32,20 +24,20 @@
   color: $primery-br-color;
   margin-bottom: 20px;
 }
-        
+
 .footer > .logo {
   margin-bottom: 20px;
 }
- 
+
 .address > .address__text {
   margin-top: 0px;
 }
 .address__text {
   margin-bottom: 8px;
   margin-left: 0;
-  @media screen and (min-width: 1200px){
-  margin-bottom: 9px;
- }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 .address {
   font-style: normal;
@@ -54,30 +46,24 @@
   line-height: 1.1;
   width: 231px;
   margin-right: 0px;
- // width: 480px;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     //margin-right: 70px;
   }
-  
 }
 .contacts__list--footer {
   margin-top: 0px;
-  //margin-right: auto;
   margin-bottom: 60px;
   margin-left: 0px;
-  //width: 232px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 768px){
-    
-    //width: 480px;
+  @media screen and (min-width: 768px) {
   }
-  }
-.contacts__link--footer{
+}
+.contacts__link--footer {
   display: flex;
   justify-content: space-between;
   color: $contacts__link--footer;
@@ -90,110 +76,99 @@
 }
 .contacts__link--footer--gap {
   margin-bottom: 8px;
-  @media screen and (min-width: 1200px){
-  margin-bottom: 9px;  
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
   }
-  
 }
 .container--join {
   width: 320px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  @media screen and (min-width: 480px) and (max-width: 767px){
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 480px;
-   
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
     display: flex;
     align-items: baseline;
-    
-    
   }
 }
-  
+
 .container--colone {
   width: 320px;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 480px) and (max-width: 767px){
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 480px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
     display: flex;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 1200px){
-    //width: 1200px;
+  @media screen and (min-width: 1200px) {
     align-items: flex-start;
-    width: 231px; 
+    width: 231px;
     margin-left: auto;
-  //width: 100%; 
   }
-  
 }
 
 .container--coltwo {
-  //width: 480px;
   width: 320px;
   justify-content: center;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 480px) and (max-width: 767px){
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 480px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
     display: flex;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 1200px){
- // width: 1200px; 
-  align-items: flex-start; 
-  width: 206px;
-  margin-left: 70px;   
-    }
-}
-.container--space{
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  display: flex;
-  justify-content:space-around;
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+    width: 206px;
+    margin-left: 70px;
   }
-  @media screen and (min-width: 1200px){
+}
+.container--space {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
     width: 1200px;
     display: flex;
     align-items: baseline;
-    //justify-content: center;
   }
-}  
+}
 .container--coltwo > .container--coltwo__gap {
   margin-top: 0px;
-  }
+}
 
 .container--coltwo__text {
-    @include font(14px, 700, 1.1);
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $primery-br-color;
-    margin-bottom: 20px;
-  }
-  
+  @include font(14px, 700, 1.1);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $primery-br-color;
+  margin-bottom: 20px;
+}
+
 .us__list {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 60px;
-    
-  }
-.us__link{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+}
+.us__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,30 +180,30 @@
   box-shadow: inset 0 0 10px 5px rgba(255, 255, 255, 0.1);
   transition: transform var(--transition);
   transition-property: background;
-  }
+}
 .us__link:hover,
-.us__link:focus{
+.us__link:focus {
   background: $accent-color;
-}    
-    
+}
+
 .us__item:not(:last-child) {
   margin-right: 10px;
-  }
+}
 .us__icon {
   width: 20px;
   height: 20px;
   fill: #fff;
-  }
+}
 .container--colthree {
   width: 320px;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 480px) and (max-width: 767px){
-  width: 480px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 480px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
     display: flex;
     flex-direction: column;
@@ -236,44 +211,39 @@
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: 1200px){
-    //width: 1200px;
-    
+  @media screen and (min-width: 1200px) {
     width: 570px;
-    margin-left: 93px;   
+    margin-left: 93px;
   }
-
-} 
-.footer--form{
-  //width: 100%;
+}
+.footer--form {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  @media screen and (min-width: 1200px){
-  align-items: flex-start;  
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
-}   
 .footer--form__gap {
   margin-top: 0;
 }
-  
+
 .footer--form__mailing {
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 1200px){
-  flex-direction: row; 
-  align-items: baseline;
-  
-   // margin-left: 93px;
-  
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+
+    // margin-left: 93px;
   }
 }
 .footer--form > .footer--form__text {
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
-  }
+}
 .footer--form__text {
   font-weight: bold;
   text-transform: uppercase;
@@ -284,39 +254,35 @@
   font-size: 14px;
   margin-bottom: 20px;
   text-align: center;
-  
 }
 .footer--form__subscribe {
   display: inline-block;
   width: 358px;
-  //width: 100%;
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   margin-bottom: 20px;
-  }
-.footer--form__subscribe > .footer--form__input{
+}
+.footer--form__subscribe > .footer--form__input {
   border-style: none;
 }
-.footer--form__input{
+.footer--form__input {
   width: 100%;
   height: 50px;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: inherit;
- 
 }
-.footer--form__input::placeholder{
+.footer--form__input::placeholder {
   font-size: 16px;
   line-height: 1.2;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-} 
+}
 
-  
 .footer--form__btn--subscribe {
   @include font(16px, 700, 1.8);
   width: 200px;
