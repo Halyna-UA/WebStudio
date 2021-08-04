@@ -154,6 +154,7 @@
     color: rgba(117, 117, 117, 0.5);
   }
 }
+
 .modal--form__check{
   appearance: none;
   position: absolute;
@@ -162,13 +163,14 @@
     }
     &:checked + .modal--form__check--wrap {
       background-image: url(../images/icon-check-svg.svg);
-      background-size: contain;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 }
 .modal--form__check--wrap {
   width: 15px;
   height: 15px;
-  display: inline-block;
+  display: block;
   margin-right: 7px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -178,7 +180,11 @@
 
 }
 .modal--form__check--accept {
-  display: inline-block;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-size: 12px;
   line-height: 1.16;
   color: #757575;
@@ -205,5 +211,6 @@
 .modal--form__check--info {
   color: $accent-color;
   text-decoration: underline;
+  margin-left: 5px;
   
 }

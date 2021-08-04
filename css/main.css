@@ -804,7 +804,6 @@ img {
   .work {
     width: 1200px;
     display: grid;
-    padding-top: 94px;
     padding-bottom: 94px;
     margin: 0 auto;
   }
@@ -897,69 +896,44 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .team__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-  }
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 @media screen and (min-width: 1200px) {
   .team__list {
+    display: flex;
     flex-wrap: nowrap;
-    margin-right: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
 .team__item {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .team__item {
-    width: 768px;
     flex-basis: calc((100% - 60px) / 2);
-    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: 1200px;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 30px;
     flex-basis: calc((100% - 120px) / 4);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.team__img {
-  width: 450px;
-  height: 460px;
-}
-
-@media screen and (min-width: 768px) {
-  .team__img {
-    width: 354px;
-    height: 374px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team__img {
-    width: 270px;
-    height: 260px;
-    background-size: cover;
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -983,19 +957,6 @@ img {
 .team__box > .team__position {
   margin-top: 0px;
   margin-bottom: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  .team__box {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team__box {
-    width: 270px;
-    margin-right: 0;
-  }
 }
 
 .team__name {
@@ -1721,13 +1682,14 @@ img {
 
 .modal--form__check:checked + .modal--form__check--wrap {
   background-image: url(../images/icon-check-svg.svg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .modal--form__check--wrap {
   width: 15px;
   height: 15px;
-  display: inline-block;
+  display: block;
   margin-right: 7px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1737,7 +1699,11 @@ img {
 }
 
 .modal--form__check--accept {
-  display: inline-block;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-size: 12px;
   line-height: 1.16;
   color: #757575;
@@ -1768,16 +1734,18 @@ img {
 .modal--form__check--info {
   color: #2196f3;
   text-decoration: underline;
+  margin-left: 5px;
 }
 
-.portfolio {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 320px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio {
-    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1850,49 +1818,29 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  /*
-  @media screen and (min-width: 768px) {
-  width: 768px;
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -30px;
-  margin-left: -30px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-    } */
 }
 
 .project__item {
   display: flex;
-  margin-bottom: 30px;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .project__item {
-    width: 768px;
-    flex-basis: calc((100% / 2) - 30px);
+    flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .project__item {
-    width: 1200px;
-    flex-basis: calc((100% / 3) - 30px);
+    flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
+    margin-top: 30px;
   }
-}
-
-.project__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .project__link {
