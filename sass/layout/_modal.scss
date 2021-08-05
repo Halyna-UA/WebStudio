@@ -20,11 +20,11 @@
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-    @media screen and (min-width: 1200px){
-      max-width: 528px;
-      width: 100vw;
-      max-height: 581px;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    width: 100vw;
+    max-height: 581px;
+  }
 }
 .btnclose {
   display: inline-flex;
@@ -42,11 +42,11 @@
   padding: 6px;
   transition: transform $transition;
   transition-property: color;
-    &:hover,
-    &:focus{
-      color: $accent-color;
-    }
-} 
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
 .btnclose__icon {
   display: flex;
   width: 100%;
@@ -56,10 +56,10 @@
   fill: currentColor;
   transition: transform $transition;
   transition-property: fill;
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 .is-hidden {
   pointer-events: none;
@@ -71,7 +71,7 @@
   flex-direction: column;
   padding: 40px;
 }
-  
+
 .modal--form__title {
   font-family: Roboto;
   font-style: normal;
@@ -98,18 +98,18 @@
   margin-right: 0px;
   transition: transform $transition;
   transition-property: fill, border-color;
-    &:focus {
-      border-color: $accent-color;
-    }
-    &:focus + .modal--form__icon {
-      fill: $accent-color;
-      }
-    &:required:focus:valid {
-      border-color: $accent-color;
-      fill: $accent-color;
-    }
+  &:focus {
+    border-color: $accent-color;
+  }
+  &:focus + .modal--form__icon {
+    fill: $accent-color;
+  }
+  &:required:focus:valid {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
 }
-.modal--form__text:focus{
+.modal--form__text:focus {
   border-color: $accent-color;
 }
 .modal--form__field {
@@ -155,17 +155,17 @@
   }
 }
 
-.modal--form__check{
+.modal--form__check {
   appearance: none;
   position: absolute;
-    &:focus + .modal--form__check--wrap{
-      border-color: $accent-color;
-    }
-    &:checked + .modal--form__check--wrap {
-      background-image: url(../images/icon-check-svg.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
+  &:focus + .modal--form__check--wrap {
+    border-color: $accent-color;
+  }
+  &:checked + .modal--form__check--wrap {
+    background-image: url(../images/icon-check-svg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .modal--form__check--wrap {
   width: 15px;
@@ -177,7 +177,6 @@
   outline: none;
   transition: transform $transition;
   transition-property: border-color, background-image;
-
 }
 .modal--form__check--accept {
   white-space: nowrap;
@@ -188,9 +187,10 @@
   font-size: 12px;
   line-height: 1.16;
   color: #757575;
-  
-  @media screen and (min-width: 1200px){
-    font-size: 14px; 
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
     line-height: 1.7;
   }
 }
@@ -212,5 +212,4 @@
   color: $accent-color;
   text-decoration: underline;
   margin-left: 5px;
-  
 }

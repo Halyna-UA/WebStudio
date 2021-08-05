@@ -11,13 +11,11 @@
 .main--nav__list {
   display: none;
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     display: flex;
     align-items: center;
     margin-left: 88px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
     align-items: center;
     margin-left: 93px;
   }
@@ -64,14 +62,12 @@
 .contacts__list {
   display: none;
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 84px;
+    margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
     flex-direction: row;
     justify-content: flex-end;
     align-content: center;
@@ -191,7 +187,6 @@
   opacity: 1;
   visibility: visible;
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     pointer-events: none;
     visibility: hidden;
     opacity: 0;

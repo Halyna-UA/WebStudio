@@ -1,41 +1,42 @@
+
 .list {
-    font-weight: 500;
-    margin: 0px;
-    padding: 0px;
-  }
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px;
+}
 
-  .list,
-  .buttons-list {
-    list-style: none;
-  }
+.list,
+.buttons-list {
+  list-style: none;
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 
-  h2,
-  h3 {
-    color: $title-text-color;
-  }
+h2,
+h3 {
+  color: $title-text-color;
+}
 
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      max-width: 480px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    }
   }
+}
 
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
